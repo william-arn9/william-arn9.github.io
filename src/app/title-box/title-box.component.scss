@@ -1,0 +1,85 @@
+.title-wrapper {
+  width: 50vw;
+  height: calc(100vh - 116px);
+
+  .title-box {
+    height: inherit;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      display: block;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 28px;
+
+      &.greeting {
+        margin-top: -8rem;
+        color: #7ccda5;
+        font-size: 64px;
+        line-height: 32px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px;
+      color: #7ccda5;
+      box-shadow: 0 4px 4px -2px #7ccda5;
+      width: fit-content;
+      line-height: 32px;
+      i {
+        margin-left: 6px;
+        font-family: FontAwesome;
+        font-style: normal;
+      }
+    }
+
+    .chip-group {
+      margin-top: 48px;
+
+      button {
+        border-radius: 24px;
+        cursor: pointer;
+        &:nth-of-type(1) {
+          margin-right: 16px;
+          line-height: 24px;
+          box-shadow: 0 0 5px 2px #c1c1c1;
+        }
+        &:nth-of-type(3) {
+          margin-left: 16px;
+          box-shadow: 0 0 5px 2px #6e5494;
+        }
+        i {
+          margin-right: 6px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+.neon-lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@keyframes neon-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 80% 0;
+  }
+}
+
+.neon-lines {
+  background-image: linear-gradient(-45deg, #190019, #001d1d, #1d001d);
+  background-size: 300% 100%;
+  //animation: neon-animation 5s linear infinite;
+}
