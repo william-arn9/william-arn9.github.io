@@ -12,11 +12,11 @@
     h2 {
       display: block;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 28px;
+      font-size: 32px;
 
       &.greeting {
         margin-top: -8rem;
-        color: #7ccda5;
+        color: #6bdea4;
         font-size: 64px;
         line-height: 32px;
       }
@@ -26,8 +26,8 @@
       text-decoration: none;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 18px;
-      color: #7ccda5;
-      box-shadow: 0 4px 4px -2px #7ccda5;
+      color: #6bdea4;
+      box-shadow: 0 4px 4px -2px #6bdea4;
       width: fit-content;
       line-height: 32px;
       i {
@@ -69,17 +69,7 @@
   z-index: -1;
 }
 
-@keyframes neon-animation {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 80% 0;
-  }
-}
-
 .neon-lines {
   background-image: linear-gradient(-45deg, #190019, #001d1d, #1d001d);
   background-size: 300% 100%;
-  //animation: neon-animation 5s linear infinite;
 }
