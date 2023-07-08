@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
+import { HomeGraphicComponent } from './home-graphic/home-graphic.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     HeaderComponent,
     TitleBoxComponent,
     ContactComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    HomeGraphicComponent
   ],
   imports: [
     BrowserModule,

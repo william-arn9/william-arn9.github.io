@@ -78,4 +78,22 @@
       }
     }
   }
+  .soft-skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.25px;
+
+    li {
+      width: fit-content;
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to bottom right, #980098, #009191) 1;
+      margin-bottom: 4px;
+    }
+  }
 }

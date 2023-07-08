@@ -1,5 +1,5 @@
 <nav>
-  <h1>
+  <h1 (click)="click('home-graphic')">
     <span class="letter first">W</span>
     <span class="letter-hidden">I</span>
     <span class="letter-hidden">L</span>
@@ -16,8 +16,8 @@
     <span class="letter-hidden">D</span>
   </h1>
   <ul>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Experience</a></li>
-    <li><a href="#">Projects</a></li>
+    <li><a href="#" (click)="click('about')">About</a></li>
+    <li><a href="#" (click)="click('experience')">Experience</a></li>
+    <li><a href="#" (click)="click('projects')">Projects</a></li>
   </ul>
 </nav>

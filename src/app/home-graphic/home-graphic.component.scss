@@ -1,0 +1,12 @@
+.home-graphic-wrapper {
+  width: 50vw;
+  height: calc(100vh - 116px);
+
+  .home-graphic-box {
+    height: inherit;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
