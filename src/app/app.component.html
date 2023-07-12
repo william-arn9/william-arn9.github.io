@@ -3,4 +3,6 @@
   <app-title-box (selectComponent)="rightComponent = $event"></app-title-box>
   <app-home-graphic *ngIf="rightComponent === 'home-graphic'"></app-home-graphic>
   <app-about-me *ngIf="rightComponent === 'about'"></app-about-me>
+  <app-experience *ngIf="rightComponent === 'experience'"></app-experience>
+  <app-projects *ngIf="rightComponent === 'projects'"></app-projects>
 </main>

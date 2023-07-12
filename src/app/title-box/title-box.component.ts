@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-title-box',
@@ -8,12 +8,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class TitleBoxComponent implements OnInit {
   @Output() selectComponent: EventEmitter<any> = new EventEmitter<any>();
 
-  constructor() { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void { }
 
-  click(component: String) {
+  click(component: String): void {
     this.selectComponent.emit(component);
+  }
+
+  openLink(url: string): void {
+    this.renderer.setAttribute(window.open(url, '_blank'), 'noopener', 'true');
   }
 
 }
