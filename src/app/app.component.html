@@ -1,5 +1,5 @@
 <app-header (selectComponent)="rightComponent = $event"></app-header>
-<main>
+<main [ngClass]="rightComponent">
   <app-title-box (selectComponent)="rightComponent = $event"></app-title-box>
   <app-home-graphic *ngIf="rightComponent === 'home-graphic'"></app-home-graphic>
   <app-about-me *ngIf="rightComponent === 'about'"></app-about-me>

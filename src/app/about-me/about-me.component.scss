@@ -13,6 +13,9 @@
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    @media (max-width: 767.9px) {
+      justify-content: flex-start;
+    }
   }
   .mat-tab-group {
     width: 100%;

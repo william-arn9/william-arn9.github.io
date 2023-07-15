@@ -1,3 +1,32 @@
 main {
   display: flex;
+  @media (max-width: 767.9px) {
+    &.about {
+      app-title-box {
+        display: none;
+      }
+      app-about-me {
+        background-image: linear-gradient(-45deg, #190019, #001d1d, #1d001d);
+        background-size: 300% 100%;
+      }
+    }
+    &.experience {
+      app-title-box {
+        display: none;
+      }
+      app-experience {
+        background-image: linear-gradient(-45deg, #190019, #001d1d, #1d001d);
+        background-size: 300% 100%;
+      }
+    }
+    &.projects {
+      app-title-box {
+        display: none;
+      }
+      app-projects {
+        background-image: linear-gradient(-45deg, #190019, #001d1d, #1d001d);
+        background-size: 300% 100%;
+      }
+    }
+  }
 }
