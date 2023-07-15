@@ -68,6 +68,9 @@ nav {
         padding: 8px;
         text-align: center;
         border-radius: 4px;
+        @media (max-width: 767.9px) {
+          width: fit-content;
+        }
 
         &:hover {
           background-color: #16162c;

@@ -1,6 +1,13 @@
 .home-graphic-wrapper {
   width: 50vw;
   height: calc(100vh - 116px);
+  @media (max-width: 767.9px) {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: -150px;
+    z-index: -1;
+  }
 
   .home-graphic-box {
     height: inherit;

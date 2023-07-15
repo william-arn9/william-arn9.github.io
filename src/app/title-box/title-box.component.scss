@@ -1,6 +1,9 @@
 .title-wrapper {
   width: 50vw;
   height: calc(100vh - 116px);
+  @media (max-width: 767.9px) {
+    width: 100vw;
+  }
 
   .title-box {
     height: inherit;
@@ -19,6 +22,9 @@
         color: #40f99c;
         font-size: 64px;
         line-height: 32px;
+        @media (max-width: 767.9px) {
+          margin-top: 60px;
+        }
       }
     }
 
@@ -39,18 +45,31 @@
 
     .chip-group {
       margin-top: 48px;
+      @media (max-width: 767.9px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+      }
 
       button {
         border-radius: 24px;
         cursor: pointer;
+        
         &:nth-of-type(1) {
           margin-right: 16px;
           line-height: 24px;
           box-shadow: 0 0 5px 2px #c1c1c1;
+          @media (max-width: 767.9px) {
+            margin: 0 0 20px 0;
+          }
         }
         &:nth-of-type(3) {
           margin-left: 16px;
           box-shadow: 0 0 5px 2px #6e5494;
+          @media (max-width: 767.9px) {
+            margin: 20px 0 0 0;
+          }
         }
         i {
           margin-right: 6px;
@@ -67,6 +86,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  height: calc(100vh);
 }
 
 .neon-lines {
