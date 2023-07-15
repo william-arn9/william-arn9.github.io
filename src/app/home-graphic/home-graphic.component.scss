@@ -8,5 +8,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+      width: 70%;
+      height: auto;
+      @media (min-aspect-ratio: 2/1) {
+        width: 50%;
+      }
+    }
   }
 }
