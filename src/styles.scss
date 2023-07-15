@@ -17,6 +17,9 @@ button {
   border: none;
   box-shadow: 0 0 5px 2px #0077B5;
 }
+a {
+  cursor: pointer;
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-tab-body-content {
