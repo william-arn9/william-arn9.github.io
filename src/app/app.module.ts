@@ -11,6 +11,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { HomeGraphicComponent } from './home-graphic/home-graphic.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,15 @@ import { ProjectsComponent } from './projects/projects.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    NgCircleProgressModule.forRoot({
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -81,6 +81,16 @@
           font-size: 48px;
           line-height: 36px;
         }
+        .percent-text {
+          font-size: 18px;
+        }
+        .percentage-circle {
+          position: relative;
+          top: 0px;
+          left: -37px;
+          transform: rotate(45deg);
+          width: 0px;
+        }
       }
     }
   }
