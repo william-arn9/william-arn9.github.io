@@ -12,6 +12,7 @@ import { HomeGraphicComponent } from './home-graphic/home-graphic.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatTabsModule,
     NgCircleProgressModule.forRoot({
       radius: 100,
