@@ -8,6 +8,9 @@
     top: -150px;
     z-index: -1;
   }
+  @media (max-width: 399.9px) {
+    top: -100px;
+  }
 
   .home-graphic-box {
     height: inherit;

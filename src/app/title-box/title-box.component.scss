@@ -4,6 +4,10 @@
   @media (max-width: 767.9px) {
     width: 100vw;
   }
+  @media (max-width: 399.9px) {
+    min-height: calc(100vh - 116px);
+    height: fit-content;
+  }
 
   .title-box {
     height: inherit;
@@ -24,6 +28,9 @@
         line-height: 32px;
         @media (max-width: 767.9px) {
           margin-top: 60px;
+        }
+        @media (max-width: 399.9px) {
+          margin-top: 160px;
         }
       }
     }

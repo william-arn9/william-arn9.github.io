@@ -71,6 +71,10 @@ nav {
         @media (max-width: 767.9px) {
           width: fit-content;
         }
+        @media (max-width: 399.9px) {
+          font-size: 18px;
+          padding: 8px 2px;
+        }
 
         &:hover {
           background-color: #16162c;
