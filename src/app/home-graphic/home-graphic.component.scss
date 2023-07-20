@@ -11,6 +11,10 @@
   @media (max-width: 399.9px) {
     top: -100px;
   }
+  @media (max-height: 441.9px) {
+    top: 120px;
+    opacity: 40%;
+  }
 
   .home-graphic-box {
     height: inherit;
@@ -19,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: visible;
     img {
       width: 70%;
       height: auto;

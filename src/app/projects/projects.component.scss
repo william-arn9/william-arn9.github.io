@@ -15,6 +15,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    @media (max-width: 767.9px) {
+      justify-content: flex-start;
+    }
 
     .subheading {
       font-size: 24px;

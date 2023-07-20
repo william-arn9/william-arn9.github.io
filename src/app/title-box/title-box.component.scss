@@ -32,6 +32,9 @@
         @media (max-width: 399.9px) {
           margin-top: 160px;
         }
+        @media (max-height: 441.9px) {
+          margin-top: 250px;
+        }
       }
     }
 
@@ -52,6 +55,11 @@
 
     .chip-group {
       margin-top: 48px;
+      display: flex;
+      justify-content: center;
+      @media (min-width: 1399.999px) {
+        justify-content: flex-start;
+      }
       @media (max-width: 767.9px) {
         display: flex;
         flex-direction: column;
@@ -75,7 +83,7 @@
           margin-left: 16px;
           box-shadow: 0 0 5px 2px #6e5494;
           @media (max-width: 767.9px) {
-            margin: 20px 0 0 0;
+            margin: 20px 0 20px 0;
           }
         }
         i {
