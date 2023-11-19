@@ -16,6 +16,9 @@ button {
   font-size: 18px;
   border: none;
   box-shadow: 0 0 5px 2px #0077B5;
+  &:hover {
+    box-shadow: 0 0 8px 2px #249cdd;
+  }
 }
 a {
   cursor: pointer;

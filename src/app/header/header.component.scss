@@ -20,6 +20,9 @@ nav {
       &.second {
         margin-left: -104px;
         transition: all .4s ease;
+        @media (max-width: 767.9px) {
+          margin-left: -124px;
+        }
       }
     }
     .letter-hidden {
@@ -76,7 +79,7 @@ nav {
         }
 
         &:hover {
-          background-color: #16162c;
+          background-color: #0f0f1e;
           color: #40f99c;
         }
       }
